@@ -156,6 +156,13 @@ li a {
     font-weight: bold;
 }
 
+.grid-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
 footer {
     background-color: #003366;
     color: white;
