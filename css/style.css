@@ -238,6 +238,40 @@ footer a {
 }
 
 
+.error-page {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.error-message h2 {
+    font-size: 30px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.error-message p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.error-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.error-navigation a {
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.error-navigation a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 800px) {
     h1 {
         max-width: 400px;
@@ -343,7 +377,15 @@ footer a {
         color: #003366;
     }
 
+    .error-message h2 {
+        font-size: 60px;
+    }
 
+    .error-message p {
+        font-size: 30px;
+    }
 
-
+    .error-navigation a {
+        font-size: 30px;
+    }
 }
