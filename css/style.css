@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Arial, sans-serif;
+    font-family: sans-serif, 'Times New Roman', Arial;
     background-color: #f9f9f9;
 }
 
@@ -53,7 +53,7 @@ nav {
 }
 
 .navigation li {
-    border: 4px dashed #003366;
+    /* border: 4px dashed #003366; */
     margin-bottom: 5px;
 }
 
@@ -75,6 +75,7 @@ nav {
 .navigation li:hover {
     /* just want to remove border here */
     border: 0px solid orange;
+    text-decoration: underline;
 }
 
 .navigation a:hover {
@@ -85,12 +86,13 @@ nav {
 
 section {
     padding: 20px;
-    font-size: 25px;
+    font-size: 22px;
+    line-height: 1.2;
 }
 
 h2 {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 32px;
     color: #003366;
     margin-bottom: 20px;
 }
@@ -103,7 +105,9 @@ h3 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 10px;
+    /* justify-content: center; */
 }
 
 .item1 {
@@ -133,10 +137,60 @@ h3 {
     grid-column: 1;
 }
 
+.item_list a:hover {
+    color: orange;
+}
+
+.item_list#popular-resources {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.item_list#popular-resources li {
+    border: 2px solid #003366;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    transition: transform 0.3s ease;
+}
+
+.item_list#popular-resources li:hover {
+    transform: scale(1.05);
+    background-color: #e6f2ff;
+}
+
+.item_list#popular-resources p:hover {
+    transform: none;
+}
+
+.item_list#develop-application {
+    list-style-type: upper-roman;
+
+}
+
 .item_list_vertical {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+}
+
+.item_list_vertical li {
+    border: 2px solid #003366;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+    transition: transform 0.3s ease;
+}
+
+.item_list_vertical li:hover {
+    transform: scale(1.05);
+    background-color: #e6f2ff;
+}
+
+.item_list_vertical a:hover {
+    color: orange;
 }
 
 .item_list_decimal {
@@ -175,4 +229,9 @@ footer a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+
+@media screen and (min-width: 600px) {
+
 }
