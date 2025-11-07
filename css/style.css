@@ -3,7 +3,7 @@ body {
     background-color: #f9f9f9;
 }
 
-#no_mobile_show {
+.no_mobile_show {
     display: none;
 }
 
@@ -322,7 +322,7 @@ footer.page404 {
         max-width: 80%;
     }
 
-    .item1#no_tablet_show {
+    .item1.no_tablet_show {
         display: none;
     }
 
