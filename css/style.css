@@ -3,6 +3,10 @@ body {
     background-color: #f9f9f9;
 }
 
+#no_mobile_show {
+    display: none;
+}
+
 /* The skip to main part css is referred from homework 3 of mine */
 .skip a {
     position: absolute;
@@ -98,9 +102,10 @@ h2 {
 }
 
 h3 {
+    text-align: center;
     font-size: 1.4em;
     color: #003366;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .grid {
@@ -233,5 +238,79 @@ footer a {
 
 
 @media screen and (min-width: 600px) {
+    h1 {
+        max-width: 400px;
+        font-size: 1.6em;
+    }
+
+    section {
+        padding: 30px;
+        font-size: 24px;
+    }
+
+    .navigation {
+        width: 500px;
+    }
+
+    .navigation a.active {
+        background-color: #eeeeee;
+        color: #003366;
+        text-decoration: underline;
+    }
+
+    .navigation a:hover {
+        background-color: #eeeeee;
+        color: orange;
+    }
+
+    .navigation li:hover {
+        text-decoration: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        justify-content: center;
+
+    }
+
+    .item1 {
+        grid-column: span 3;
+        justify-self: center;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .item1#no_tablet_show {
+        display: none;
+    }
+
+
+    .item_list {
+        padding-top: 20px;
+        grid-column: span 2;
+    }
+
+    .item_list a:hover {
+        color: orange;
+    }
+
+    .item_list#popular-resources {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: -10px;
+    }
+
+    .item1#no_mobile_show {
+        grid-column: span 2.5;
+        display: block;
+    }
+
+
+
+
+
+
+
 
 }
