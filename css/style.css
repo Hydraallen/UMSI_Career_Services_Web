@@ -237,6 +237,11 @@ footer a {
     font-weight: bold;
 }
 
+footer.page404 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
 
 .error-page {
     text-align: center;
