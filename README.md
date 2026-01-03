@@ -1,5 +1,6 @@
-# Client_Project_Starter_Code
-Starter code for the Fall 2025 & Winter 2026 Client Project
+# UMSI Career Services Client Project
+
+## [Live Site](https://hydraallen.github.io/UMSI_Career_Services_Web/)
 
 ## Notice
 
